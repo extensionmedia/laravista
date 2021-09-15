@@ -10,7 +10,7 @@
             Bienvenue!
         </h1>
         <p class="text-xs my-2">
-            Créer votre compte sur Baqora.com pour beneficier de plusieurs avantages et pouvoir créer et suivre facilement vos annonces.
+            Créer votre compte sur {{config('app.name')}}.com pour beneficier de plusieurs avantages et pouvoir créer et suivre facilement vos annonces.
         </p>
         <hr>
     </div>

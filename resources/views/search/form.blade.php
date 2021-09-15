@@ -46,7 +46,7 @@
                 $('.selected').append(`
                     <div class="flex gap-4 border-green-200 mb-2">
                         <p class="text-sm text-gray-800"><i class="fas fa-check"></i> `+cat+` <i class="text-xs fas fa-angle-right"></i> `+subcat+`</p>
-                        <button data-id="`+id+`" class="remove_this text-red-600 text-xs"><i class="fas fa-times"></i> Supprimer</button>
+                        <button data-id="`+id+`" class="remove_this text-blue-600 text-xs"><i class="fas fa-times"></i> Supprimer</button>
                         <input type="hidden" name="sous_category_slug" value="`+slug+`">
                     </div>
                 `);
@@ -75,7 +75,7 @@
                 $('.selected').append(`
                     <div class="flex gap-4 bg-gray-100 mb-2">
                         <p class="text-sm text-gray-800"><i class="fas fa-check"></i> `+city+` <i class="text-xs fas fa-angle-right"></i> `+sector+`</p>
-                        <button data-id="`+id+`" class="remove_this_city text-red-600 text-xs"><i class="fas fa-times"></i> Supprimer</button>
+                        <button data-id="`+id+`" class="remove_this_city text-blue-600 text-xs"><i class="fas fa-times"></i> Supprimer</button>
                         <input type="hidden" name="city_sector_id" value="`+sector_id+`">
                     </div>
                 `);
@@ -107,7 +107,7 @@
                     $(".args.subCategory").html(``);
                     $.each(r, function(i, val){
                         $(".args.subCategory").append(`
-                            <label for="annonce_category_`+val.id+`" class="inline-block text-sm border bg-red-100 hover:bg-red-300 cursor-pointer rounded-lg px-2 py-1 mb-2"><input type="checkbox" name="" value="`+val.slug+`" id="annonce_category_`+val.id+`" class="mr-1 select_this"><span class='text'>`+val.annonce_category_name+`</span></label>
+                            <label for="annonce_category_`+val.id+`" class="inline-block text-sm border bg-blue-100 hover:bg-blue-300 cursor-pointer rounded-lg px-2 py-1 mb-2"><input type="checkbox" name="" value="`+val.slug+`" id="annonce_category_`+val.id+`" class="mr-1 select_this"><span class='text'>`+val.annonce_category_name+`</span></label>
                         `);
                     })
                 });
@@ -125,7 +125,7 @@
                     $(".args.sector").html(``);
                     $.each(r, function(i, val){
                         $(".args.sector").append(`
-                            <label for="city_sector_`+val.id+`" class="inline-block text-sm border bg-red-100 hover:bg-red-300 cursor-pointer rounded-lg px-2 py-1 mb-2"><input type="checkbox" name="" value="`+val.id+`" id="city_sector_`+val.id+`" class="mr-1 select_this_city"><span class='text'>`+val.city_sector_name+`</span></label>
+                            <label for="city_sector_`+val.id+`" class="inline-block text-sm border bg-blue-100 hover:bg-blue-300 cursor-pointer rounded-lg px-2 py-1 mb-2"><input type="checkbox" name="" value="`+val.id+`" id="city_sector_`+val.id+`" class="mr-1 select_this_city"><span class='text'>`+val.city_sector_name+`</span></label>
                         `);
                     })
                 });

@@ -6,10 +6,10 @@
                 <i class="fas fa-user-shield"></i>
             </div>
             <h1 class="text-lg text-gray-600 my-2">
-                <b>Baqora</b> | Création de Compte
+                <b>{{config('app.name')}}</b> | Création de Compte
             </h1>
             <p class="text-gray-600 text-xs">
-                Merci d'avoir créer votre compte sur le site Baqora.com, Le processus de vérification prend un moment, vous allez recevoir un email sur votre email.
+                Merci d'avoir créer votre compte sur le site {{config('app.name')}}.com, Le processus de vérification prend un moment, vous allez recevoir un email sur votre email.
             </p>
         </div>
     </div>

@@ -1,6 +1,6 @@
 @extends('container.app')
 @section('title')
-    Baqora : 404 Aucune resultat pour cette recherche
+    {{config('app.name')}} : 404 Aucune resultat pour cette recherche
 @endsection
 @section('content')
     <div class="w-full">
