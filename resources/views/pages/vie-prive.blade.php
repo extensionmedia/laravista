@@ -1,6 +1,6 @@
 @extends('container.app')
 @section('title')
-    Baqora : Vie Privé et Politique de Confidentialité
+    {{config('app.name')}} : Vie Privé et Politique de Confidentialité
 @endsection
 @section('content')
 
@@ -8,8 +8,8 @@
 
     <div class="mx-auto w-full xl:w-2/3 px-4 lg:px-8">
         <div class="py-4">
-            <a href="{{route('start')}}" class="bg-gray-100 rounded-lg hover:bg-gray-200 text-xs px-1 text-red-400"> Acceuil </a> <i class="text-xs fas fa-angle-right"></i>
-            <a href="" class="bg-gray-100 rounded-lg hover:bg-gray-200 text-xs px-1 text-red-400"> Pages </a> <i class="text-xs fas fa-angle-right"></i>
+            <a href="{{route('start')}}" class="bg-gray-100 rounded-lg hover:bg-gray-200 text-xs px-1 text-blue-400"> Acceuil </a> <i class="text-xs fas fa-angle-right"></i>
+            <a href="" class="bg-gray-100 rounded-lg hover:bg-gray-200 text-xs px-1 text-blue-400"> Pages </a> <i class="text-xs fas fa-angle-right"></i>
             <span class="text-xs"> Conditions Générales d’Utilisation </span>
         </div>
 
@@ -20,7 +20,7 @@
     <div class="mx-auto w-full xl:w-2/3 px-4 lg:px-8 mt-8 mb-12">
         <div class="w-full">
             <p class="text-sm my-4 bg-green-50">
-                Si une annonce est refusée pour non respect du règlement, il sera proposé à l'annonceur de la modifier. Baqora.com se réserve le droit de juger de la conformité d'une annonce au règlement et à l'esprit du site. Le règlement est susceptible d'être modifié et peut être réactualisé en permanence.
+                Si une annonce est refusée pour non respect du règlement, il sera proposé à l'annonceur de la modifier. {{config('app.name')}}.com se réserve le droit de juger de la conformité d'une annonce au règlement et à l'esprit du site. Le règlement est susceptible d'être modifié et peut être réactualisé en permanence.
             </p>
 
             <p class="text-sm my-4 font-bold">Doublons:</p>
@@ -34,11 +34,11 @@
             </p>
             <p class="text-sm my-4 font-bold">Annonce de particulier:</p>
             <p class="text-sm my-4">
-Les annonces catégorisées comme "Particulier" publiées sur Baqora.com sont réservées aux personnes non commerciales, autorisées à s'engager par contrat légal.
+Les annonces catégorisées comme "Particulier" publiées sur {{config('app.name')}}.com sont réservées aux personnes non commerciales, autorisées à s'engager par contrat légal.
             </p>
             <p class="text-sm my-4 font-bold">Annonce de professionnel:</p>
             <p class="text-sm my-4">
-Les annonces catégorisées comme "Professionnel" publiées sur Baqora.com sont réservées aux entreprises. Baqora.com se réserve le droit de juger du caractère professionnel d'une annonce.
+Les annonces catégorisées comme "Professionnel" publiées sur {{config('app.name')}}.com sont réservées aux entreprises. {{config('app.name')}}.com se réserve le droit de juger du caractère professionnel d'une annonce.
             </p>
             <p class="text-sm my-4 font-bold">Services:</p>
             <p class="text-sm my-4">
@@ -56,7 +56,7 @@ Le titre de l'annonce doit brièvement décrire l'article ou le service proposé
 - Une URL (adresse Web)<br>
 - Un numéro de téléphone<br>
 - Un lien ou un compte de réseaux sociaux<br>
-Baqora.com se réserve le droit de modifier le titre de l'annonce pour qu'il soit conforme au réglement.<br>
+{{config('app.name')}}.com se réserve le droit de modifier le titre de l'annonce pour qu'il soit conforme au réglement.<br>
 Aucun caractère inutile n'est autorisé dans le titre<br>
             </p>
             <p class="text-sm my-4 font-bold">Texte de l'annonce:</p>
@@ -69,11 +69,11 @@ Seules les annonces en Français sont autorisées.
             </p>
             <p class="text-sm my-4 font-bold">Catégories:</p>
             <p class="text-sm my-4">
-L'annonce doit être placée dans la catégorie décrivant le mieux l'article ou le service. Le cas échéant, Baqora.com peut la déplacer dans la catégorie correspondante. Les biens et services n'appartenant pas à la même catégorie doivent être proposés dans des annonces séparées. Les annonces de vente doivent être classées sous "Offre", les annonces de recherche sous "Demande". "A louer" et "Demande de location" sont disponibles sous certaines catégories. Dans d'autres catégories, les annonces "A louer" doivent être classées sous "Offre (vous vendez un bien)", les annonces de demandes de location sous "Demande (vous recherchez un bien)".
+L'annonce doit être placée dans la catégorie décrivant le mieux l'article ou le service. Le cas échéant, {{config('app.name')}}.com peut la déplacer dans la catégorie correspondante. Les biens et services n'appartenant pas à la même catégorie doivent être proposés dans des annonces séparées. Les annonces de vente doivent être classées sous "Offre", les annonces de recherche sous "Demande". "A louer" et "Demande de location" sont disponibles sous certaines catégories. Dans d'autres catégories, les annonces "A louer" doivent être classées sous "Offre (vous vendez un bien)", les annonces de demandes de location sous "Demande (vous recherchez un bien)".
             </p>
             <p class="text-sm my-4 font-bold">Nombre d'annonces actives gratuites par utilisateur:</p>
             <p class="text-sm my-4">
-Le nombre d’annonces actives gratuites par utilisateur sur Baqora.com est limité selon le type d’utilisateurs.
+Le nombre d’annonces actives gratuites par utilisateur sur {{config('app.name')}}.com est limité selon le type d’utilisateurs.
 Le tableau ci-dessous reprend le niveau de limitation pour les annonces gratuites par type de compte (Particulier/Professionnel/Boutique).
 Il est possible pour tous les types de compte d'accéder à un niveau supérieurs d'annonces actives en procédant au paiement lorsque la limite d'annonces gratuites actives est atteinte.
             </p>
@@ -84,7 +84,7 @@ Il est possible pour tous les types de compte d'accéder à un niveau supérieur
             </p>
             <p class="text-sm my-4 font-bold">Photos:</p>
             <p class="text-sm my-4">
-            La vente d'animaux sur Baqora.com doit se conformer à la législation en vigueur au Maroc.
+            La vente d'animaux sur {{config('app.name')}}.com doit se conformer à la législation en vigueur au Maroc.
             </p>
             <p class="text-sm my-4 font-bold">Biens piratés et contrefaçons:</p>
             <p class="text-sm my-4">
@@ -92,7 +92,7 @@ Il est possible pour tous les types de compte d'accéder à un niveau supérieur
             </p>
             <p class="text-sm my-4 font-bold">Règlement pour les animaux:</p>
             <p class="text-sm my-4">
-            La vente d'animaux sur Baqora.com doit se conformer à la législation en vigueur en Maroc .
+            La vente d'animaux sur {{config('app.name')}}.com doit se conformer à la législation en vigueur en Maroc .
             </p>
             <p class="text-sm my-4 font-bold">
             Articles illégaux:
@@ -104,19 +104,19 @@ Il est possible pour tous les types de compte d'accéder à un niveau supérieur
             <p class="text-sm my-4">
             Les annonces ou photos pouvant être perçues comme une insulte envers des individus, des groupes ethniques ou des personnalités sont interdites.<br>
 
-            Biens et services interdits: Baqora.com a établi des restrictions sur certains biens ou services susceptibles d'être proposés. Voici une liste de biens ou services non autorisés.
+            Biens et services interdits: {{config('app.name')}}.com a établi des restrictions sur certains biens ou services susceptibles d'être proposés. Voici une liste de biens ou services non autorisés.
             </p>
             <p class="text-sm my-4 font-bold">Offres non réalistes:</p>
             <p class="text-sm my-4">
-            Les offres non réalistes ne sont pas autorisées. Baqora.com se réserve le droit de juger de ce qui n'est pas réaliste.
+            Les offres non réalistes ne sont pas autorisées. {{config('app.name')}}.com se réserve le droit de juger de ce qui n'est pas réaliste.
             </p>
             <p class="text-sm my-4 font-bold">Utilisation d'un service de dépôt d'annonces:</p>
             <p class="text-sm my-4">
-            L’utilisation d’un service de dépôt d’annonces, au titre duquel des personnes sont payées pour déposer de très grandes quantités d'annonces sur les sites Web, ne sont pas autorisés sur Baqora.com. Ces méthodes inondent le site de spams et rendent difficile la recherche d'autres contenus par les utilisateurs.
+            L’utilisation d’un service de dépôt d’annonces, au titre duquel des personnes sont payées pour déposer de très grandes quantités d'annonces sur les sites Web, ne sont pas autorisés sur {{config('app.name')}}.com. Ces méthodes inondent le site de spams et rendent difficile la recherche d'autres contenus par les utilisateurs.
             </p>
-            <p class="text-sm my-4 font-bold">Recevoir la newsletter Baqora.com et être informé de nos promotions et actualités:</p>
+            <p class="text-sm my-4 font-bold">Recevoir la newsletter {{config('app.name')}}.com et être informé de nos promotions et actualités:</p>
             <p class="text-sm my-4">
-            En déposant une annonce ou en répondant à une annonce vous nous autorisez à vous envoyer des emails ou des sms pour vous informer et vous aider à mieux vendre et acheter sur Baqora.com. Vous disposez à tout moment du droit de vous désinscrire de ce service via les newsletters.
+            En déposant une annonce ou en répondant à une annonce vous nous autorisez à vous envoyer des emails ou des sms pour vous informer et vous aider à mieux vendre et acheter sur {{config('app.name')}}.com. Vous disposez à tout moment du droit de vous désinscrire de ce service via les newsletters.
             </p>
 
         </div>

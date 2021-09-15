@@ -14,19 +14,7 @@
     <title>@yield('title')</title>
     @include('container.partials.favicon')
     @if (env('APP_ENV')=='production')
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JW7HZE4FEL"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-JW7HZE4FEL');
-        </script>
-    @endif
-
-    @if (env('APP_ENV')=='production')
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6225075215500279" crossorigin="anonymous"></script>
     @endif
 </head>
 <body>
